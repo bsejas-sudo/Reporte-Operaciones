@@ -6,7 +6,6 @@
 <title>Granger · Operaciones</title>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
-<<<<<<< HEADommi
 <link rel="stylesheet" href="style.css">
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
@@ -14,11 +13,9 @@
 .map-leaflet-tip{background:#1a2540!important;color:#fff!important;border:none!important;border-radius:8px!important;font-family:'DM Sans',sans-serif!important;font-size:12px!important;padding:6px 10px!important;box-shadow:0 4px 12px rgba(0,0,0,.2)!important;}
 .map-leaflet-tip::before{display:none!important}
 </style>
-=======
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
 <link rel="stylesheet" href="style.css">
->>>>>>> c9b0d1e1bd0c27232903f93fb67884806040adf2
 </head>
 <body>
 
@@ -27,11 +24,7 @@
     <div class="logo-wrap">
       <!-- Granger logo: navy text on dark bg = white version -->
       <svg class="logo-svg" viewBox="0 0 320 80" xmlns="http://www.w3.org/2000/svg">
-<<<<<<< HEAD
         <text x="4" y="62" font-family="DM Sans, Arial Black, sans-serif" font-weight="800" font-size="62" fill="white" letter-spacing="-2">GRANGER</text><text x="284" y="62" font-family="DM Sans, Arial Black, sans-serif" font-weight="800" font-size="62" fill="#f18a00">.</text>
-=======
-        <text x="4" y="62" font-family="DM Sans, Arial Black, sans-serif" font-weight="800" font-size="62" fill="white" letter-spacing="-2">GRANGER.</text>
->>>>>>> c9b0d1e1bd0c27232903f93fb67884806040adf2
       </svg>
     </div>
     <div class="sidebar-label">Operaciones</div>
@@ -49,13 +42,12 @@
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
       Compras
     </div>
-<<<<<<< HEAD
+
     <div class="nav-item" onclick="showPage('materias',this)">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M4.22 4.22l2.12 2.12M17.66 17.66l2.12 2.12M2 12h3M19 12h3"/></svg>
       Materias Primas
     </div>
-=======
->>>>>>> c9b0d1e1bd0c27232903f93fb67884806040adf2
+
   </nav>
   <div class="sidebar-footer">
     <div class="last-update"><div class="pulse"></div><span id="last-upd">Datos actualizados</span></div>
@@ -70,11 +62,10 @@
       <select id="mes-select" onchange="renderAll()"></select>
     </div>
   </div>
-<<<<<<< HEAD
-=======
+
   <div class="content">
 
->>>>>>> c9b0d1e1bd0c27232903f93fb67884806040adf2
+
     <!-- ===== PRODUCCIÓN ===== -->
     <div id="page-produccion" class="page active">
       <div class="kpi-row kpi-4" id="prod-kpis"></div>
@@ -110,10 +101,10 @@
         <div class="chart-card">
           <div class="chart-header"><div><div class="chart-title">Unidades por mes</div><div class="chart-subtitle">Capacidad · Planificado · Efectivo</div></div></div>
           <div class="chart-container" style="height:210px"><canvas id="chart-anual-barras"></canvas></div>
-<<<<<<< HEAD
+
         <div id="anual-acumulado"></div>
-=======
->>>>>>> c9b0d1e1bd0c27232903f93fb67884806040adf2
+
+
         </div>
         <div class="chart-card">
           <div class="chart-header">
@@ -124,10 +115,7 @@
         </div>
       </div>
     </div>
-<<<<<<< HEAD
-=======
 
->>>>>>> c9b0d1e1bd0c27232903f93fb67884806040adf2
     <!-- ===== LOGÍSTICA ===== -->
     <div id="page-logistica" class="page">
       <div class="section-title">KPIs de Logística</div>
@@ -199,12 +187,12 @@
             <div style="overflow-y:auto;max-height:300px"><table id="tabla-tiempos-enbox"></table></div>
           </div>
         </div>
-<<<<<<< HEAD
+
     </div>
     <!-- ===== COMPRAS ===== -->
     <div id="page-compras" class="page">
       <div class="section-title">KPIs de Compras</div>
-=======
+
       </div>
           <div style="color:var(--text3);font-size:14px;font-weight:600">En desarrollo</div>
           <div style="color:var(--text3);font-size:12px">El análisis B2B se incorporará próximamente
@@ -215,7 +203,7 @@
     </div>
     <!-- ===== COMPRAS ===== -->
     <div id="page-compras" class="page">
->>>>>>> c9b0d1e1bd0c27232903f93fb67884806040adf2
+
       <div class="kpi-row kpi-4" id="compras-kpis"></div>
       <div class="chart-card">
         <div class="chart-header">
@@ -230,7 +218,7 @@
       </div>
     </div>
 
-<<<<<<< HEAD
+
     <!-- ===== MATERIAS PRIMAS ===== -->
     <div id="page-materias" class="page">
       <div class="section-title">Materias Primas</div>
@@ -279,4 +267,4 @@
 
 </body>
 </html>
->>>>>>> c9b0d1e1bd0c27232903f93fb67884806040adf2
+
